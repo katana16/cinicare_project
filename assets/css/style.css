@@ -1,0 +1,862 @@
+
+
+body {
+font-family: "Poppins", sans-serif;
+font-weight: normal;
+font-style: normal;
+color: #6b7280;
+overflow-x: hidden;
+font-size: 1rem;
+line-height: 1.6;
+}
+
+
+/* Header*/
+
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+padding: 0;
+
+}
+nav.navbar .container-fluid {
+max-width: 100%; 
+width: 100%; 
+margin-right: auto; 
+margin-left: auto; 
+padding:0;
+-webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+-ms-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+display: flex;
+justify-content: space-between;
+background-color: #ffffff;
+}
+
+
+/* Logo CSS */
+.logo {
+max-width: 200px;
+width: auto;
+height: auto;
+}
+
+a.navbar-brand {
+padding: 10px 25px 15px;
+margin: 0;
+background-color: #ffffff;
+}
+
+
+
+/* Navigation bar header */
+.navbar .navbar-collapse .nav-item a {
+color: #191b26;
+font-weight: bold;
+font-family: "Kelson", sans-serif;
+font-size: 16px;
+-webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+-ms-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+-o-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar .navbar-collapse .nav-item a:hover {
+color: #2db1ec;
+}
+
+
+/* Signup buttons */
+.signup-in{
+margin-right: 20px;
+}
+
+
+/* All Sections */
+.max-width-section {
+max-width: 1140px;
+margin: 0 auto; /* Center the container */
+}
+
+.home-sections {
+margin: 0 !important;
+}
+
+.section-header {
+margin-bottom: 50px;
+}
+
+.section-header h2 {
+font-size: 36px;
+font-weight: 700;
+color: #272b41;
+}
+
+.section-header .sub_title {
+margin-top: 20px;
+}
+.section-header .sub_title p {
+margin-bottom: 0px;
+}
+
+/* first sections */
+#first-section {
+background: #f9f9f9 url(../img/sections/banner-6.jpg) no-repeat bottom center;
+background-size: cover;
+padding: 200px 0;
+}
+
+.col-md-6 h2 {
+font-weight: 600;
+font-size: 48px;
+margin-bottom: 25px;
+}
+
+.col-md-6 span {
+color: #0e82fd;
+}
+
+.home-sections .col-md-6 p {
+font-weight: 500;
+font-size: 18px;
+margin-bottom: 25px;
+}
+
+#first-section .align-items-center {
+padding: 50px 0;
+}
+
+
+/* Specialities Section */
+#speicality-section {
+padding: 80px 0 ;
+}
+
+.speicality-img {
+position: relative;
+height: 150px;
+box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+border-radius: 100%;
+width: 150px;
+background: #fff;
+margin: 0 auto;
+}
+.speicality-img img {
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+left: 0;
+right: 0;
+margin: 0 auto;
+width: auto !important;
+}
+.speicality-item p {
+font-size: 16px;
+font-weight: 700;
+margin: 30px 0 0;
+}
+#speicality-slider .owl-carousel .owl-dots {
+text-align: center;
+margin-top: 40px;
+}
+
+
+
+
+/* How it work sections */
+#how-section {
+background-color: #F2F6F6;
+padding: 80px 0 0;
+}
+.col-lg-4.col-md-12.work-img-info.aos {
+position: relative;
+}
+.work-img-info .work-img {
+position: absolute;
+bottom: 0;
+}
+
+.work-details {
+padding-left: 60px;
+}
+.section-header-one {
+margin-bottom: 60px;
+}
+.section-header-one h5 {
+font-weight: 600;
+font-size: 18px;
+color: #0e82fd;
+margin-bottom: 10px;
+}
+
+.section-header-one .section-title {
+display: inline-block;
+position: relative;
+}
+
+.section-header-one h2 {
+font-size: 40px;
+font-weight: 600;
+color: #1F2937;
+margin-bottom: 0;
+}
+
+.section-header-one .section-title::before {
+content: "";
+background: url(https://doccure-wp.dreamstechnologies.com/elementor/wp-content/themes/doccure/assets/images/header-icon.svg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: right;
+position: absolute;
+top: -5px;
+right: -30px;
+width: 35px;
+height: 20px;
+}
+
+.work-info {
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: start;
+margin-bottom: 35px;
+display: flex;
+}
+
+.work-info .work-icon {
+margin-right: 20px;
+}
+
+.work-info .work-icon span {
+min-width: 70px;
+height: 70px;
+background: #E0E7FF;
+border-radius: 10px;
+-webkit-transition: 0.7s;
+-ms-transition: 0.7s;
+transition: 0.7s;
+transform: rotate(0);
+-webkit-transform: rotate(0);
+-ms-transform: rotate(0);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.work-info .work-content h5 {
+font-weight: 600;
+font-size: 18px;
+color: #1F2937;
+margin-bottom: 14px;
+}
+
+.work-info .work-content p {
+font-size: 16px;
+margin-bottom: 0;
+}
+
+
+/* features sections */
+#features-section {
+background-color: #F2F6F6;
+padding: 80px 0;
+}
+
+#features-section .clinic-row {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+
+#features-section .clinic-main-grid {
+padding-left: 0;
+padding-right: 0;
+background: #fff;
+}
+
+.clinic-grid {
+position: relative;
+text-align: center;
+margin-bottom: 0px;
+background: transparent;
+border: 1px solid rgba(152, 162, 176, 0.34);
+padding-top: 40px;
+padding-bottom: 40px;
+z-index: 1;
+}
+
+.page-template-homepagethree .hvr-bounce-to-right {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+position: relative;
+-webkit-transition-property: color;
+transition-property: color;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+
+
+.hvr-bounce-to-right:before {
+border-radius: 0;
+}
+
+.hvr-bounce-to-right:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #26a3db;
+border-radius: 6px;
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transform-origin: 0 50%;
+transform-origin: 0 50%;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+.hvr-bounce-to-right:hover:before {
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+.clinic-grid img {
+width: 100px;
+border-radius: 5px;
+}
+
+.clinic-grid h4 {
+font-weight: 600 !important;
+margin-top: 20px;
+margin-bottom: 0;
+text-align: center;
+font-size: 22px;
+}
+.clinic-grid:hover h4 {
+color: #fff !important;
+}
+
+
+
+
+/* Doctors sections */
+#doctors-section {
+padding: 80px 0;
+}
+
+
+
+
+.profile-widget {
+background-color: #fff;
+border: 1px solid #f0f0f0;
+border-radius: 4px;
+margin-bottom: 30px;
+position: relative;
+-webkit-transition: all .3s ease 0s;
+-moz-transition: all .3s ease 0s;
+-o-transition: all .3s ease 0s;
+transition: all .3s ease 0s;
+padding: 15px;
+max-width: 300px;
+}
+.doc-img {
+position: relative;
+overflow: hidden;
+z-index: 1;
+border-radius: 4px;
+width: 100%;
+height: 155px;
+}
+.doc-img:hover img {
+-webkit-transform: scale(1.15);
+-moz-transform: scale(1.15);
+transform: scale(1.15);
+}
+.doc-img img {
+border-radius: 4px;
+transform: translateZ(0);
+transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+width: 100%;
+object-fit: cover;
+}
+.pro-content {
+padding: 15px 0 0;
+}
+.pro-content .title {
+font-size: 17px;
+font-weight: 500;
+margin-bottom: 5px;
+}
+.profile-widget .pro-content .title a {
+display: inline-block;
+color: #2E3842;
+text-decoration: none;
+}
+.profile-widget p.speciality {
+    font-size: 13px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+
+.available-info {
+    font-size: 13px;
+    color: #757575;
+    font-weight: 400;
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+.available-info li i {
+width: 22px;
+}
+.available-info li + li {
+margin-top: 5px;
+}
+.row.row-sm {
+margin-left: -3px;
+margin-right: -3px;
+}
+.row.row-sm > div {
+padding-left: 3px;
+padding-right: 3px;
+}
+.view-btn {
+color: #2db1ec;
+font-size: 13px;
+border: 2px solid #2db1ec;
+text-align: center;
+display: block;
+font-weight: 500;
+padding: 6px;
+}
+.view-btn:hover, .view-btn:focus {
+background-color: #2db1ec;
+color: #fff;
+}
+.book-btn {
+background-color: #2db1ec;
+border: 2px solid #2db1ec;
+color: #fff;
+font-size: 13px;
+text-align: center;
+display: block;
+font-weight: 500;
+padding: 6px;
+}
+.book-btn:hover, .book-btn:focus {
+background-color: #2598cb;
+border-color: #2598cb;
+color: #fff;
+}
+
+
+/* Gallery sections */
+#gallery-section {
+padding: 80px 0 ;
+}
+#gallery-section .section-header-one {
+text-align: center;
+}
+/* Apointment sections */
+
+
+
+
+/* Footer CSS */
+.footer {
+background-color: #15558d;
+}
+.footer .footer-top {
+padding: 40px 0 100px;
+}
+.footer .container-fluid {
+padding-left: 30px;
+padding-right: 30px;
+}
+.footer .footer-widget .footer-logo {
+margin-bottom: 30px;
+}
+.footer .footer-widget .footer-about-content p {
+color: #fff;
+font-family: "Poppins", sans-serif;
+font-size: 0.9375rem;
+}
+
+
+.footer-widget h2.footer-title {
+color: #fff;
+font-size: 20px;
+font-weight: 700;
+margin-bottom: 30px;
+text-transform: capitalize;
+}
+.footer .footer-widget.footer-menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+outline: none;
+}
+.footer .footer-menu ul li {
+margin-bottom: 10px;
+position: relative;
+}
+.footer .footer-menu ul li a {
+color: #fff;
+font-size: 15px;
+transition: all 0.4s ease 0s;
+}
+.footer .footer-widget.footer-menu ul li a:hover {
+color: #fff;
+letter-spacing: 0.5px;
+padding-left: 10px;
+}
+.footer .footer-menu ul li a i {
+margin-right: 5px;
+}
+.col-md-6 h2 {
+font-weight: 600;
+font-size: 48px;
+margin-bottom: 25px;
+}
+
+.footer-contact-info {
+color: #fff;
+font-size: 15px;
+}
+.footer-contact-info p i {
+margin-right: 15px;
+}
+.footer-contact-info .footer-address {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+.footer-contact-info .footer-address span {
+margin-right: 20px;
+color: #ffffff;
+}
+.footer-contact-info .footer-address span i.fa-map-marker-alt {
+font-size: 20px;
+}
+
+.footer .footer-bottom .created-by {
+border-top: 1px solid #1663a6;
+padding: 30px 0;
+}
+.col-md-6 .created-text p {
+font-weight: 500;
+font-size: 18px;
+margin: 0;
+color: WHITE;
+}
+
+.created-by .supervisor {
+text-align: right;
+}
+.col-md-6 .created-text span  {
+font-weight: 700;
+color: #ffffff;
+}
+
+
+
+
+/*------------------------------------------------------------ login In and Sign Up CSS---------------------------------------------- */
+
+.container {
+max-width: 1140px;
+}
+
+.golobal-content, .appointment-content, .signup-content, .login-content {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 0;
+}
+.form-container {
+width: 50%;
+}
+
+.image-container {
+width: 50%;
+}
+
+.form-container {
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-right: 25px; /* Adjust space between form and image */
+}
+.image-container img {
+max-width: 100%;
+height: auto;
+}
+.form-container form {
+display: flex;
+flex-direction: column;
+}
+
+.form-container input, .form-container select {
+margin-bottom: 15px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+.form-container input[type="submit"] {
+background-color: #2db1ec;
+color: white;
+cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+background-color: #2598cb;
+}
+
+.signup-or,.login-or {
+color: #d4d4d4;
+margin-bottom: 20px;
+margin-top: 20px;
+padding-bottom: 10px;
+padding-top: 10px;
+position: relative;
+}
+
+
+.or-line {
+background-color: #e5e5e5;
+height: 1px;
+margin-bottom: 0;
+margin-top: 0;
+display: block;
+}
+
+.dont-have {
+color: #3d3d3d;
+font-size: 13px;
+text-align: center !important;
+}
+.dont-have a {
+color: #09dca4;
+}
+
+.appointment-header, .signup-header, .login-header {
+margin-bottom: 25px;
+}
+.appointment-header h3, .signup-header h3, .login-header h3 {
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 3px;
+color:#272b41;
+}
+
+.signup-content .form-container input[type="submit"] {
+    margin-top: 30px;
+}
+.form-container .error {
+    color: red;
+    text-align: center;
+}
+.form-container .success {
+    color: #09dca4;
+    text-align: center;
+}
+
+
+
+.form-container input.error-input {
+    border: 1px solid red;
+}
+
+.form-container form p {
+    text-align: center;
+    color: red;
+}
+
+
+/*------------------------------------------------------------ Search Doctors CSS---------------------------------------------- */
+
+.content {
+    background-color: #fbfbfb;
+    padding: 50px 0;
+    min-height: 400px;
+}
+
+.search-box {
+    background-color: white;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.search-box h2 {
+    padding-bottom: 15px;
+    margin: 20px;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 20px;
+    font-weight: 600;
+    color: #272b41;
+}
+
+.centered-form {
+    padding: 0 20px 20px;
+  }
+
+.content .container .row h2 {
+    text-align: center;
+}
+
+/*------------------------------------------------------------ Appointment CSS---------------------------------------------- */
+
+.appointment-content .card-body {
+    background-color: white;
+    padding: 20px;
+    margin: -20px -20px 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-doc-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.booking-doc-info img {
+    border-radius: 4px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.booking-doc-info h4 {
+    color: #2E3842;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.booking-doc-info p {
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.appointment-content .form-container input[type="submit"] {
+    margin-top: 30px;
+}
+
+/*------------------------------------------------------------ booked Successfully CSS---------------------------------------------- */
+
+.card.success-card {
+    border: 1px solid #f0f0f0;
+    margin-bottom: 1.875rem;
+}
+
+.success-card .msg-body {
+    padding: 50px 20px;
+}
+.msg-body {
+    padding: 1.5rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.success-cont {
+    text-align: center;
+}
+
+.success-cont i {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #09e5ab;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    background-color: #09e5ab;
+}
+
+.success-cont h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.view-inv-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+}
+.success-cont .btn-primary {
+    background-color: #09e5ab;
+    border: 1px solid #09e5ab;
+}
+
+.success-cont .btn-primary:hover, .success-cont .btn-primary:focus, .success-cont .btn-primary.active, .success-cont .btn-primary:active {
+    background-color: #09dca4;
+    border: 1px solid #09dca4;
+}
+
+
+/*----------------------------------------------------------------------------------------------------- dachbourd  */
+.dashboard {
+    background-color: #eeeeee;
+    padding: 50px 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

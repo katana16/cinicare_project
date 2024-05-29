@@ -1,0 +1,880 @@
+/* Variables */
+
+:root {
+--poppins: "Poppins", sans-serif;
+--lato: "Lato", sans-serif;
+
+--light: #f9f9f9;
+--blue: #3c91e6;
+--light-blue: #cfe8ff;
+--grey: #eee;
+--dark-grey: #aaaaaa;
+--dark: #342e37;
+--red: #db504a;
+--yellow: #ffce26;
+--light-yellow: #fff2c6;
+--orange: #fd7238;
+--light-orange: #ffe0d3;
+}
+
+/* End variabales */
+
+/* Globale rules */
+
+* {
+--webkit-box-sizing: border-box;
+--moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+h1 {
+margin: 0;
+padding: 0;
+}
+
+/* Responsive */
+ol, ul {
+    padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #6b7280;
+    overflow-x: hidden;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+max-width: 1200px;
+}
+/* End Globale rules */
+
+/* SideBar */
+.sticky-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.dashboard {
+    background-color: #eeeeee;
+    padding: 0;
+}
+
+.dashboard .row .col-lg-2, .dashboard .row .col-lg-10  {
+    background-color: #eeeeee;
+}
+
+
+#sidebar {
+height: 100%;
+background: #ffffff;
+z-index: 2000;
+font-family: "Lato", sans-serif;
+transition: 0.3s ease;
+overflow-x: hidden;
+scrollbar-width: none;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+#sidebar::--webkit-scrollbar {
+display: none;
+}
+#sidebar .brand {
+z-index: 500;
+font-size: 24px;
+font-weight: 700;
+height: 70px;
+display: flex;
+align-items: center;
+color: #2db1ec;
+}
+#sidebar .brand i {
+min-width: 60px;
+display: flex;
+justify-content: center;
+}
+
+#sidebar .side-menu {
+width: 100%;
+margin-top: 20px;
+padding: 0;
+}
+#sidebar .side-menu li {
+height: 48px;
+background: transparent;
+margin-left: 6px;
+border-radius: 48px 0 0 48px;
+padding: 4px;
+}
+#sidebar .side-menu li.active {
+background: var(--grey);
+position: relative;
+}
+#sidebar .side-menu li.active::before {
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+top: -40px;
+right: 0;
+box-shadow: 20px 20px 0 var(--grey);
+z-index: -1;
+}
+#sidebar .side-menu li.active::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+bottom: -40px;
+right: 0;
+box-shadow: 20px -20px 0 var(--grey);
+z-index: -1;
+}
+#sidebar .side-menu li a {
+width: 100%;
+height: 100%;
+background: #ffffff;
+display: flex;
+align-items: center;
+border-radius: 48px;
+font-size: 16px;
+color: var(--dark);
+white-space: nowrap;
+overflow-x: hidden;
+}
+#sidebar .side-menu.top li.active a {
+color: #2db1ec;
+}
+#sidebar.hide .side-menu li a {
+width: calc(48px - (4px * 2));
+transition: width 0.3s ease;
+}
+#sidebar .side-menu li a.logout {
+color: var(--red);
+}
+#sidebar .side-menu.top li a:hover {
+color: #2db1ec;
+}
+#sidebar .side-menu li a i {
+min-width: calc(60px - ((4px + 6px) * 2));
+display: flex;
+justify-content: center;
+}
+
+/* End SideBar */
+
+/* Content */
+
+
+#content {
+position: relative;
+width: 100%;
+transition: 0.3s ease;
+}
+
+/* header */
+
+
+/* End header */
+
+/* Main */
+
+main {
+padding-top: 30px;
+padding-bottom: 30px;
+font-family: "Poppins", sans-serif;
+background-color: var(--grey);
+height: calc(100vh - 56px);
+overflow-y: auto;
+height: 100%;
+}
+
+/* head title */
+main .container .head-title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #342e37;
+}
+
+main .container .box-info {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+grid-gap: 24px;
+margin-top: 36px;
+padding: 0;
+}
+
+main .container .box-info li {
+padding: 24px;
+background: #ffffff;
+border-radius: 20px;
+display: flex;
+align-items: center;
+grid-gap: 24px;
+}
+
+main .box-info li i {
+width: 80px;
+height: 80px;
+border-radius: 10px;
+font-size: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main .box-info li:nth-child(1) i {
+background: var(--light-blue);
+color: var(--blue);
+}
+main .container .box-info li:nth-child(2) i {
+background: var(--light-yellow);
+color: var(--yellow);
+}
+main .container .box-info li:nth-child(3) i {
+background: var(--light-orange);
+color: var(--orange);
+}
+main .container .box-info li .text h3 {
+font-size: 24px;
+font-weight: 600;
+color: var(--dark);
+}
+main .container .box-info li .text p {
+color: var(--dark);
+}
+
+main .container .table-data {
+display: flex;
+flex-wrap: wrap;
+grid-gap: 24px;
+margin-top: 24px;
+width: 100%;
+color: var(--dark);
+}
+main .table-data > div {
+border-radius: 20px;
+background: #ffffff;
+padding: 24px;
+overflow-x: auto;
+}
+main .table-data .head {
+display: flex;
+align-items: center;
+grid-gap: 16px;
+margin-bottom: 24px;
+}
+main .table-data .head h3 {
+margin-right: auto;
+font-size: 24px;
+font-weight: 600;
+}
+main .table-data .head i {
+cursor: pointer;
+}
+main .table-data .order {
+flex-grow: 1;
+flex-basis: 500px;
+}
+main .table-data .order table {
+width: 100%;
+border-collapse: collapse;
+overflow: scroll;
+}
+
+main .table-data .order table th {
+padding-bottom: 12px;
+font-size: 13px;
+text-align: left;
+border-bottom: 1px solid var(--grey);
+min-width: 100px;
+}
+main .table-data .order table td {
+padding: 16px 20px 16px 0;
+}
+main .table-data .order table tr td:first-child {
+padding-left: 5px;
+}
+main table tbody tr:hover {
+background: #f7f7f7;
+}
+main .table-data .order table .confirme {
+color: var(--light);
+padding: 4px;
+background-color: var(--blue);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+main table td span {
+    font-size: 13px;
+    color: #888;
+}
+
+/*------------------------------------------------------------ Table Buttons ---------------------------------------------- */
+th.actionbtn {
+    width: 30%;
+}
+table button {
+    margin-left: 5px;
+    font-size: 13px;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    border: none;
+}
+button.accept {
+    background-color: rgba(15, 183, 107, 0.12) !important;
+    color: #26af48 !important;
+}
+button.complete {
+    background-color: rgba(17, 148, 247, 0.12) !important;
+    color: #2196f3 !important;
+}
+button.cancel, button.delete, button.reject {
+    background-color: rgba(242, 17, 54, 0.12) !important;
+    color: #e63c3c !important;
+}
+
+button.create {
+    background-color: rgba(15, 183, 107, 0.12) !important;
+    color: #26af48 !important;
+}
+button.create a {
+    color: #26af48 !important;
+}
+
+button.view  {
+    background-color: rgba(2, 182, 179, 0.12) !important;
+    color: #1db9aa !important;
+}
+button.view a {
+    font-size: .875rem;
+    font-family: inherit;
+    color: #1db9aa !important;
+}
+button.view a::before {
+    font-family: "Font Awesome 6 Free";
+
+}
+button.edit  {
+    background-color: rgba(15, 183, 107, 0.12) !important;
+    color: #26af48 !important;
+}
+
+button.edit a {
+    color: #26af48 !important;
+}
+
+button.view a, button.edit a {
+    font-size: .875rem;
+    font-family: inherit;
+}
+
+button.view a::before, button.edit a::before {
+    font-family: "Font Awesome 6 Free";
+}
+
+/*----------------------------------------------------------------------------------------------------- Diff from Doctor */
+#content main .table-data .order table tr td .status {
+font-size: 13px;
+color: var(--dark);
+font-weight: 700;
+}
+
+#content main .table-data .interviews {
+flex-grow: 1;
+flex-basis: 300px;
+}
+main .table-data .interviews .interviews-list {
+width: 100%;
+}
+main .table-data .interviews .interviews-list li {
+width: 100%;
+margin-bottom: 16px;
+background: var(--grey);
+border-radius: 10px;
+padding: 14px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+main .table-data .interviews .interviews-list li i {
+cursor: pointer;
+}
+
+
+/*----------------------------------------------------------------------------------------------------- Admin Doctor list */
+main .container .all-list {
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+    overflow: hidden;
+}
+
+main .list {
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 24px;
+    overflow-x: auto;
+}
+
+main .head {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+main .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main .list .head .add {
+    color: var(--dark);
+    cursor: pointer;
+}
+
+main .list .head a:hover {
+    color: #3c91e6;
+}
+
+main .list .head i {
+    cursor: pointer;
+}
+
+main .list table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+main .list table th {
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+    min-width: 100px;
+}
+
+main .list table td {
+    padding: 16px 20px 16px 0;
+    border-top: 1px solid #e2e5e8;
+}
+
+main .list table td button:hover {
+    opacity: 70%;
+}
+
+main .list table td .edit {
+    padding: 4px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+}
+
+main .list table td .delete {
+    color: var(--light);
+    padding: 4px;
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .list table td .info {
+    padding: 4px;
+    background-color: var(--dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+main .list table td .edit a {
+    color: var(--light);
+}
+main .list table td .info a {
+    color: var(--light);
+}
+
+
+/*----------------------------------------------------------------------------------------------------- Admin Update Doctor  */
+.container .add-box {
+    margin: 50px 0;
+    font-family: var(--poppins);
+    padding: 30px 0;
+}
+
+.container .add-box .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.container .add-box .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.add-box .head a {
+    padding: 4px 10px;
+    border: 1px solid black;
+    background-color: #5f6365;
+    color: white;
+    border-radius: 5px;
+}
+
+.container .add-box .fild {
+    margin-bottom: 10px;
+}
+.container .add-box .label {
+    display: block;
+    margin-bottom: 5px;
+}
+.container .add-box .input {
+    width: 100%;
+    padding: 3px;
+}
+
+.container .add-box .btn {
+    padding: 5px 5px 9px;
+    color: var(--light);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------- dachbourd  */
+.widget-profile {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px;
+}
+.widget-profile .profile-info-widget {
+    display: block;
+    text-align: center;
+}
+.widget-profile .profile-info-widget .booking-doc-img {
+    display: inline-block;
+    margin: 0 0 15px;
+    width: auto;
+    padding: 8px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+.widget-profile .profile-info-widget .booking-doc-img img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.profile-det-info {
+    overflow: hidden;
+}
+.profile-det-info h3 {
+    font-size: 17px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.patient-details h5 {
+    color: #757575;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*----------------------------------------------------------------------------------------------------- Appointment List  */
+main .container .box .box-head {
+    justify-content: space-between;
+}
+main .container .box .box-head form {
+    display: flex;
+    gap: 10px;
+}
+main .container .box .box-head form input[type="date"] {
+    border-radius: 6px;
+    padding: 3px;
+    border: 1px solid var(--dark-grey);
+    width: 200px;
+    cursor: pointer;
+    cursor: pointer;
+
+}
+main .container .box .box-head form .filter {
+    width: 60px;
+    background-color: var(--blue);
+    color: var(--light);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+main .container .box .box-head form .reset {
+    width: 60px;
+    background-color: var(--red);
+    border: none;
+    border-radius: 6px;
+}
+main .container .box .box-head form .reset a {
+    color: var(--light);
+}
+
+/*----------------------------------------------------------------------------------------------------- Sztting Page CSS */
+.setting-form .error {
+    color: red;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------- Medical Recored View Page */
+.content-wrapper {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.content-wrapper .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+}
+.content-wrapper .card-body {
+    padding: 20px;
+    margin: 0;
+}
+.content-wrapper .text-center{
+    margin-bottom: 30px;
+}
+.go-back-btn {
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+    margin-left: -110px;
+    margin-top: -15px;
+}
+.go-back-btn .btn {
+    background-color: #858585;
+    border-color: #858585;
+}
+
+.content-wrapper .card {
+    border: 1px solid #d5d2d2;
+    margin-bottom: 1.875rem;
+}
+
+.content-wrapper .card-text {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.content-wrapper pre {
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+
+/*------------------------------------------------------------ login In and Sign Up CSS---------------------------------------------- */
+.golobal-content, .appointment-content, .signup-content, .login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    }
+    .form-container {
+    width: 50%;
+    }
+    
+    .image-container {
+    width: 50%;
+    }
+    
+    .form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 25px; 
+    }
+    .image-container img {
+    max-width: 100%;
+    height: auto;
+    }
+    .form-container form {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .form-container input, .form-container select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+    .form-container input[type="submit"] {
+    background-color: #2db1ec;
+    color: white;
+    cursor: pointer;
+    }
+    .form-container input[type="submit"]:hover {
+    background-color: #2598cb;
+    }
+    
+    .signup-or,.login-or {
+    color: #d4d4d4;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    }
+    
+    
+    .or-line {
+    background-color: #e5e5e5;
+    height: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
+    }
+    
+    .dont-have {
+    color: #3d3d3d;
+    font-size: 13px;
+    text-align: center !important;
+    }
+    .dont-have a {
+    color: #09dca4;
+    }
+    
+    .appointment-header, .signup-header, .login-header {
+    margin-bottom: 25px;
+    }
+    .appointment-header h3, .signup-header h3, .login-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color:#272b41;
+    }
+    
+    .signup-content .form-container input[type="submit"] {
+        margin-top: 30px;
+    }
+
+    .form-container .success {
+        color: #09dca4;
+        text-align: center;
+    }
+    
+    
+    
+    .form-container input.error-input {
+        border: 1px solid red;
+    }
+    
+    .form-container form p {
+        text-align: center;
+        color: red;
+    }
+    .form-container .error {
+        color: red;
+    }
+
+/*----------------------------------------------------------------------------------------------------- Create Record CSS */
+.content-wrapper form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper textarea {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.content-wrapper .all-body {
+    background-color: #eee;
+}
+.content-wrapper .record-content textarea {
+    height: auto;
+}
+.content-wrapper .record-content .collapse {
+    margin: 0 !important;
+}
+
+.content-wrapper form.test-form {
+    text-align: right;
+    box-shadow: none;
+    border: none;
+}
+
+/*----------------------------------------------------------------------------------------------------- Working days CSS */
+
+.setting-form .day-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.setting-form .day-label {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    user-select: none;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.all-list p.info-show {
+    padding: 15px;
+    color: #212529;
+    background-color: #f8f8f8;
+    border-top: 1px solid #d2d2d2;
+    margin: 20px -25px -25px -25px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
